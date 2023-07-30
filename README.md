@@ -27,20 +27,21 @@ Names of models inside the checkpoint for VideoSwin:
 * Multiscale Memory Stacked: swin-msqry-mem-nobidir
 
 ## Evaluation
+Only use "_adaptive" if GPU memory does not fit. Otherwise use remove it for the decoder type
 
 * Youtube Objects
 ```
-python inference.py --model_path <pretrained/model/path.pth> --output_dir <your/output/dir>  --dataset ytbo --val_size 360 
+python inference.py --model_path CKPT_PATH --dataset ytbo --val_size 473 --output_dir OUT_DIR --decoder_type multiscale_query_memory_nobidir_adaptive
 ```
 
 * DAVIS16
 ```
-python inference.py --model_path <pretrained/model/path.pth> --output_dir <your/output/dir>  --dataset davis --val_size 473 
+python inference.py --model_path CKPT_PATH --dataset davis --val_size 473 --output_dir OUT_DIR --decoder_type multiscale_query_memory_nobidir_adaptive --aug
 ```
 
 * MoCA 
 ```
-python inference.py --model_path <pretrained/model/path.pth> --output_dir <your/output/dir>  --dataset moca --val_size 473 
+python inference.py --model_path CKPT_PATH --dataset moca --val_size 473 --output_dir OUT_DIR --decoder_type multiscale_query_memory_nobidir_adaptive
 ```
 
 ## Results

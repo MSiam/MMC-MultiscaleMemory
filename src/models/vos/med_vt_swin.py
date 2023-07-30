@@ -744,9 +744,9 @@ class MultiscaleMemoryTransformerDecoder(nn.Module):
 
 class MultiscaleMemoryNoBidirTransformerDecoder(MultiscaleMemoryTransformerDecoder):
 
-    def __init__(self, decoder_layer, num_layers, norm=None, return_intermediate=False):
+    def __init__(self, decoder_layer, num_layers, norm=None, return_intermediate=False, eff=False):
         super(MultiscaleMemoryNoBidirTransformerDecoder, self).__init__(
-                decoder_layer, num_layers, norm=norm, return_intermediate=return_intermediate, eff=False)
+                decoder_layer, num_layers, norm=norm, return_intermediate=return_intermediate, eff=eff)
 
         self.iterate_levels = [0, 1, 2, 0, 1, 2, 3]
 
