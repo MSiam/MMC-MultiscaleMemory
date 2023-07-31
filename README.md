@@ -27,7 +27,7 @@ Names of models inside the checkpoint for VideoSwin:
 * Multiscale Memory Stacked: swin-msqry-mem-nobidir
 
 ## Evaluation
-Only use "_adaptive" if GPU memory does not fit. Otherwise use remove it for the decoder type
+Only use "_adaptive" if GPU memory does not fit. Otherwise remove it for the decoder type to become only "multiscale_query_memory_nobidir"
 
 * Youtube Objects
 ```
