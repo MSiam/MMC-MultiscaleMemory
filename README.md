@@ -18,8 +18,9 @@ We have used three publicly available dataset for evaluation. Download the datas
 - [Youtube-Objects](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6248065)
 
 ## Pre-trained Models
+Pretrained backbone for the video-swin model is available [here](https://drive.google.com/file/d/1TOQjpM2mDZITLnktyLOGir5JT0TeQGg5/view?usp=sharing).
 
-Download pretrained models [here](https://www.dropbox.com/scl/fi/91059ds8o8eoizyzgc7hy/weights_ablation_avos_msmemory.zip?rlkey=5xge28u8ef8ey2z4nalvf725e&dl=0). It includes the weights for the baseline multiscale query and our multiscale memory models with VideoSwin and R101.
+Download our trained models [here](https://www.dropbox.com/scl/fi/91059ds8o8eoizyzgc7hy/weights_ablation_avos_msmemory.zip?rlkey=5xge28u8ef8ey2z4nalvf725e&dl=0). It includes the weights for the baseline multiscale query and our multiscale memory models with VideoSwin and R101.
 
 Names of models inside the checkpoint for VideoSwin:
 * Baseline - Multiscale Query: ms_qry_5frames
